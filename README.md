@@ -44,7 +44,7 @@ Add to `~/.config/opencode/opencode.json`:
 }
 ```
 
-Then restart KiloCode. Tools available:
+Then restart KiloCode/Opencode. Tools available:
 - `notion_search` — search pages
 - `notion_read_page` — read full page content
 - `notion_create_page` — create new page (in database or as child)
