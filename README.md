@@ -11,6 +11,7 @@ Tools for reading, writing, and creating Notion pages via MCP.
 
 2. **Configure:**
    ```bash
+   cd notion-mcp
    cp .env.example .env
    # Edit .env with your token
    ```
