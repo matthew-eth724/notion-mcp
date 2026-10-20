@@ -1,0 +1,14 @@
+[project]
+name = "notion-mcp"
+version = "0.1.0"
+description = "MCP server for Notion API"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "notion-client>=2.2.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
