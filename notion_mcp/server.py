@@ -25,8 +25,13 @@ from mcp.types import (
 from notion_client import Client as NotionClient
 from notion_client.errors import APIResponseError
 
-# Load .env from project root (parent of server directory)
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+# Load .env from the package dir, then the project root (cwd-independent)
+_here = os.path.dirname(os.path.abspath(__file__))
+for _candidate in (
+    os.path.join(_here, ".env"),
+    os.path.join(_here, "..", ".env"),
+):
+    load_dotenv(_candidate)
 
 # ─── Config ──────────────────────────────────────────────────────────────
 NOTION_TOKEN = os.getenv("NOTION_TOKEN")
